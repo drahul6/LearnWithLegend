@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^learnwithlegends\.com$ [NC]
+RewriteRule ^(.*)$ http://www.learnwithlegends.com/$1 [R=301,L]
